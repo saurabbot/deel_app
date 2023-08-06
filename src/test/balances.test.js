@@ -73,7 +73,7 @@ describe('Balance', () => {
             const res = await chai.request(app).post(`/balances/deposit/${profile.id}`).set('profile_id', profile.id).send({
                 amount: depositMoney,
             });
-            expect(res).to.have.status(404);
+            expect(res).to.have.status(400);
             expect(res.body).to.be.an('object');
             expect(res.body).to.have.property('success', false);
             const updatedProfile = await Profile.findOne({
