@@ -35,6 +35,7 @@ The exercise requires [Node.js](https://nodejs.org/en/) to be installed. We reco
 1. Next, `npm run seed` will seed the local SQLite database. **Warning: This will drop the database if it exists**. The database lives in a local file `database.sqlite3`.
 
 1. Then run `npm start` which should start both the server and the React client.
+2. Then run `npm run test` run all test cases for the implemented api endpoints.
 
 ❗️ **Make sure you commit all changes to the master branch!**
 
@@ -94,5 +95,6 @@ It would be great for example if you'd write some unit test / simple frontend de
 ## Submitting the Assignment
 
 When you have finished the assignment, zip your repo (make sure to include .git folder) and send us the zip.
+I have implemented test cases too.
 
 Thank you and good luck! 🙏
